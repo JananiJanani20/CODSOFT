@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>SteelCo - Quality Steel Solutions</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="steelco-logo.png" alt="SteelCo Logo">
+        </div>
+        <div class="header-info">
+            <div class="contact-info">
+                &#9993: info@steelco.com<br>
+                &#9742: +1(555)123-4567
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <nav>
+            <button class="nav-btn" onclick="scrollToSection('Products')">Products</button>
+            <button class="nav-btn" onclick="scrollToSection('Buy now')">Buy now</button>
+            <button class="nav-btn" onclick="scrollToSection('Services')">Services</button>
+        </nav>
+    </header>
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product">
+            <h3>Steel Beams</h3>
+            <p>High-quality steel beams for construction projects.</p>
+        </div>
+        <div class="product">
+            <h3>Sheet Metal</h3>
+            <p>Durable sheet metal for various industrial applications.</p>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About SteelCo</h2>
+        <p>SteelCo is a leading provider of high-quality steel products.<br>
+           where excellence meets steel we pride ourselves on delivering top-notch products <br>
+           such as steel beams and durable sheet metal for construction and industrial applications.<br>
+           With a commitment to quality and innovation, SteelCo stands as a reliable partner for your steel needs. <br>
+           Explore our offerings and discover the strength that builds a better future.</p>
+    </section>
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <div class="input-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+        </div>
+        <div class="input-container">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+        </div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+<footer>
+        <p>&copy; 2024 SteelCo. All rights reserved.</p>
+        <div class="social-icons">
+        </div>
+    </footer>
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>
+
+
